@@ -7,10 +7,13 @@ This personal project is puzzle game
 3. Configure and generate build files
 4. Build the project
 5. Run the executable
+
+```bash
 cmake -S . -B build
 cd build
 make
 ./puzzle_rush
+```
 
 ## Made with
 
