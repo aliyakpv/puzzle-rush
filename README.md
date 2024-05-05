@@ -1,5 +1,5 @@
 ## Puzzle rush
-This personal project is puzzle game 
+This personal project is snake game 
 
 ## To start
 1. Clone the Repository
