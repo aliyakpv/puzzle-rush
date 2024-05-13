@@ -3,10 +3,6 @@ project(puzzle_rush C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Setting parameters for raylib
-set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) 
-set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) 
-
 include(FetchContent)
 
 FetchContent_Declare(
@@ -17,5 +13,19 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(raylib)
 
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(
+    ${PROJECT_NAME} 
+    src/main.cpp 
+    src/Game.cpp 
+    src/MainMenu.cpp 
+    src/GamePlay.cpp 
+    src/EasyLevel.cpp 
+    src/Constants.cpp 
+    src/Snake.cpp 
+    src/Food.cpp 
+    src/Utils.cpp 
+    src/Obstacle.cpp
+    src/MediumLevel.cpp
+    src/HardLevel.cpp
+)
 target_link_libraries(${PROJECT_NAME} raylib)
